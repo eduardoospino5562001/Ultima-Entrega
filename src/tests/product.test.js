@@ -14,8 +14,8 @@ let product
 beforeAll(async () => {
 
   const user = {
-    email: "fredy@gmail.com",
-    password: "fredy845"
+    email: "yoneison@gmail.com",
+    password: "yoneison1234"
   }
 
   const res = await request(app)
@@ -53,8 +53,6 @@ test("GET -> BASE_URL, should retunr statusCode 200, and res.body===1", async ()
 
   const res = await request(app)
     .get(BASE_URL)
-
-  // console.log(res.body);
 
   expect(res.status).toBe(200)
   expect(res.body).toBeDefined()
