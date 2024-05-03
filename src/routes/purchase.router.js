@@ -7,6 +7,4 @@ routerPurchase.route('/')
   .get(getAll)
   .post(create);
 
-
-
 module.exports = routerPurchase;
